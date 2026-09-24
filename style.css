@@ -1,127 +1,153 @@
-/* ------------------------------
-   GLOBAL STYLES
---------------------------------*/
-
+/* BASE */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: "Inter", sans-serif;
-    background: #f7f5f2;
-    color: #333;
-    line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: #FAF7F3;
+  color: #2E2E2E;
+  font-family: "Georgia", serif;
+  line-height: 1.7;
 }
 
-h1, h2, h3 {
-    font-family: "Playfair Display", serif;
-    margin: 0 0 20px 0;
-    font-weight: 400;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* ------------------------------
-   NAVIGATION
---------------------------------*/
-
-.nav {
-    background: #fff;
-    border-bottom: 1px solid #eee;
-    padding: 20px 0;
-}
-
-.nav-container {
-    max-width: 1100px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-}
-
-.logo {
-    font-family: "Playfair Display", serif;
-    font-size: 1.4rem;
-    font-weight: 600;
-}
-
-.nav-links a {
-    margin-left: 20px;
-    font-size: 0.95rem;
-    color: #444;
-}
-
-.nav-links a:hover {
-    color: #a00000;
-}
-
-/* ------------------------------
-   HERO SECTION
---------------------------------*/
-
+/* HERO */
 .hero {
-    text-align: center;
-    padding: 80px 20px;
+  text-align: center;
+  padding: 5rem 1rem 3rem;
 }
 
-.hero-img {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 20px;
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+  letter-spacing: 0.03em;
 }
 
-.tagline {
-    font-size: 1.2rem;
-    margin: 20px 0;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+.subtitle {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  color: #6A6A6A;
 }
 
-.cta-buttons .btn {
-    display: inline-block;
-    padding: 12px 24px;
-    margin: 10px;
-    background: #333;
-    color: #fff;
-    border-radius: 4px;
-    font-size: 0.95rem;
+/* AUTHOR NOTE */
+.author-note {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  color: #4A4A4A;
 }
 
-.cta-buttons .btn:hover {
-    background: #a00000;
+/* SECTIONS */
+.section {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 0 1rem;
 }
 
-/* ------------------------------
-   SECTIONS
---------------------------------*/
+.section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
 
-section {
-    max-width: 800px;
-    margin: 60px auto;
-    padding: 0 20px;
+/* BOOKS */
+.book-list {
+  display: grid;
+  gap: 2rem;
+}
+
+.book {
+  background: #FFFFFF;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* PODCAST & SUBSTACK */
+.podcast-feature,
+.substack-feature {
+  background: #FFFFFF;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  max-width: 700px;
+  margin: auto;
+}
+
+/* FEATURED */
+.featured {
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+}
+
+.feature-item {
+  background: #FFFFFF;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* STORIES & VIDEOS */
+.story-list, .video-list {
+  display: grid;
+  gap: 2rem;
+}
+
+.story, .video {
+  background: #FFFFFF;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* BUTTONS */
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background: #8B4C39;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 4px;
 }
 
 .link {
-    color: #a00000;
-    font-weight: 500;
+  color: #8B4C39;
+  text-decoration: none;
+  font-weight: 500;
 }
 
-.link:hover {
-    text-decoration: underline;
+/* SIGNATURE */
+.signature {
+  text-align: center;
+  padding: 3rem 1rem;
+  font-size: 1.4rem;
+  color: #5A3E36;
 }
 
-/* ------------------------------
-   FOOTER
---------------------------------*/
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: #F7F3F1;
+}
 
-footer {
-    text-align: center;
-    padding: 40px;
-    font-size: 0.9rem;
-    color: #777;
+.footer-title {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.footer-sub {
+  color: #6A6A6A;
+  margin: 0.5rem 0 1rem;
+}
+
+.social a {
+  margin: 0 0.5rem;
+  color: #8B4C39;
+  text-decoration: none;
+}
+
+copyright {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #6A6A6A;
 }
