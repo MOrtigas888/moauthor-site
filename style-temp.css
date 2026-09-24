@@ -20,6 +20,51 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+  /* ------------------------------ NEW HERO LAYOUT ------------------------------*/
+
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 90vh;              /* full-height hero */
+    padding: 80px 10%;
+    overflow: visible;
+}
+
+/* ------------------------------ HERO IMAGE -----------------------------------*/
+
+.hero-photo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;                  /* full-height image */
+    width: auto;
+    object-fit: cover;
+    z-index: 1;
+    transform: translateX(-10%);   /* offset to the left */
+    opacity: 0.95;                 /* soft overlap */
+}
+
+/* ------------------------------ HERO TEXT ------------------------------------*/
+
+.hero-text {
+    position: relative;
+    z-index: 2;                    /* text sits above image */
+    max-width: 55%;                /* image covers 40–50% */
+    margin-left: 45%;              /* pushes text right */
+}
+
+.hero-text h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
 }
 
 /* NAVBAR */
