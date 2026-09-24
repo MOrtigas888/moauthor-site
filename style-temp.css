@@ -22,49 +22,49 @@ body {
   }
   /* ------------------------------ NEW HERO LAYOUT ------------------------------*/
 
+/* ------------------------------ HERO LAYOUT ------------------------------*/
+
 .hero {
     position: relative;
     display: flex;
     align-items: center;
-    min-height: 90vh;              /* full-height hero */
-    padding: 80px 10%;
+    min-height: 80vh;              /* slightly less than full-height */
+    padding: 60px 10%;
     overflow: visible;
 }
 
-/* ------------------------------ HERO IMAGE -----------------------------------*/
+/* ------------------------------ HERO IMAGE ------------------------------*/
 
 .hero-photo {
     position: absolute;
     left: 0;
-    top: 0;
-    height: 100%;                  /* full-height image */
+    top: 50%;
+    height: 85vh;                  /* controlled height */
     width: auto;
     object-fit: cover;
+    transform: translate(-15%, -50%); /* offset left + vertical centering */
     z-index: 1;
-    transform: translateX(-10%);   /* offset to the left */
-    opacity: 0.95;                 /* soft overlap */
+    opacity: 0.9;                  /* soft overlap */
 }
 
-/* ------------------------------ HERO TEXT ------------------------------------*/
+/* ------------------------------ HERO TEXT ------------------------------*/
 
 .hero-text {
     position: relative;
-    z-index: 2;                    /* text sits above image */
-    max-width: 55%;                /* image covers 40–50% */
+    z-index: 2;
+    max-width: 50%;                /* ensures image covers ~40–50% */
     margin-left: 45%;              /* pushes text right */
 }
 
 .hero-text h1 {
     font-family: "Playfair Display", serif;
-    font-size: 3rem;
+    font-size: 2.8rem;
     margin-bottom: 20px;
 }
 
 .hero-text p {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     line-height: 1.6;
-}
-
 }
 
 /* NAVBAR */
