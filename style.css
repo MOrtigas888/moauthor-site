@@ -8,146 +8,112 @@ body {
   line-height: 1.7;
 }
 
-/* HERO */
-.hero {
-  text-align: center;
-  padding: 5rem 1rem 3rem;
+/* ANIMATION */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
 }
 
-.hero h1 {
-  font-size: 3rem;
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #FFFFFF;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-brand {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #8B4C39;
+  text-decoration: none;
+}
+
+.nav-right a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #6A6A6A;
+  font-weight: 500;
+}
+
+.nav-right a:hover {
+  color: #8B4C39;
+}
+
+/* HERO SPLIT — ALEXANDRIA STYLE */
+.hero-split {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  padding: 6rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.hero-left {
+  position: relative;
+}
+
+.hero-gradient {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 420px;
+  height: 520px;
+  background: linear-gradient(180deg, #F2E9E4, #FAF7F3);
+  border-radius: 20px;
+  z-index: -1;
+}
+
+.hero-left img {
+  width: 380px;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.hero-right {
+  max-width: 550px;
+}
+
+.hero-right h1 {
+  font-size: 3.2rem;
   margin: 0;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
 }
 
 .subtitle {
   margin-top: 0.5rem;
-  font-size: 1.1rem;
-  color: #6A6A6A;
-}
-
-/* AUTHOR NOTE */
-.author-note {
-  max-width: 700px;
-  margin: 2rem auto;
-  padding: 0 1rem;
   font-size: 1.2rem;
+  color: #6A6A6A;
+}
+
+.hero-intro {
+  margin-top: 1.5rem;
+  font-size: 1.15rem;
   color: #4A4A4A;
+  line-height: 1.75;
 }
 
-/* SECTIONS */
-.section {
-  max-width: 900px;
-  margin: 4rem auto;
-  padding: 0 1rem;
-}
-
-.section h2 {
+/* FEATURED IN STRIP */
+.featured-strip {
   text-align: center;
-  margin-bottom: 2rem;
+  padding: 2rem 1rem;
 }
 
-/* BOOKS */
-.book-list {
-  display: grid;
-  gap: 2rem;
-}
-
-.book {
-  background: #FFFFFF;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-}
-
-/* PODCAST & SUBSTACK */
-.podcast-feature,
-.substack-feature {
-  background: #FFFFFF;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-  max-width: 700px;
-  margin: auto;
-}
-
-/* FEATURED */
-.featured {
-  max-width: 800px;
-  margin: 4rem auto;
-  padding: 0 1rem;
-}
-
-.feature-item {
-  background: #FFFFFF;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-}
-
-/* STORIES & VIDEOS */
-.story-list, .video-list {
-  display: grid;
-  gap: 2rem;
-}
-
-.story, .video {
-  background: #FFFFFF;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-}
-
-/* BUTTONS */
-.btn {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.6rem 1.2rem;
-  background: #8B4C39;
-  color: #FFFFFF;
-  text-decoration: none;
-  border-radius: 4px;
-}
-
-.link {
-  color: #8B4C39;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-/* SIGNATURE */
-.signature {
-  text-align: center;
-  padding: 3rem 1rem;
-  font-size: 1.4rem;
-  color: #5A3E36;
-}
-
-/* FOOTER */
-.footer {
-  text-align: center;
-  padding: 3rem 1rem;
-  background: #F7F3F1;
-}
-
-.footer-title {
-  font-size: 1.4rem;
-  margin: 0;
-}
-
-.footer-sub {
-  color: #6A6A6A;
-  margin: 0.5rem 0 1rem;
-}
-
-.social a {
-  margin: 0 0.5rem;
-  color: #8B4C39;
-  text-decoration: none;
-}
-
-copyright {
-  margin-top: 1rem;
-  font-size: 0.9rem;
-  color: #6A6A6A;
-}
+.feature
